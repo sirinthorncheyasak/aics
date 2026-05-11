@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Year 1</title>
+</head>
+
+<body class="bg-[#F3F5F8] p-8 font-sans">
+
+  <!-- Header -->
+  <div class="mb-8">
+    <h1 class="text-5xl font-bold text-slate-800 mb-3">
+      🎓 Year 1
+    </h1>
+
+    <p class="text-slate-500 text-xl">
+      Foundation Level • AI Literacy → AI Consulted
+    </p>
+  </div>
+
+  <!-- AI Driver Courses -->
+  <div class="bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 text-white rounded-3xl p-8 mb-10 shadow-2xl">
+
+    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+
+      <div>
+        <h2 class="text-3xl font-bold mb-2">
+          🚀 AI Driver Courses
+        </h2>
+
+        <p class="text-blue-100 leading-relaxed max-w-2xl">
+          Key foundational courses that introduce students to AI Literacy,
+          Prompt Engineering, Computational Thinking, and AI-assisted learning.
+        </p>
+      </div>
+
+      <div class="bg-white/10 backdrop-blur-lg rounded-2xl px-5 py-4 border border-white/20">
+        <p class="text-sm text-blue-100 mb-1">
+          Year 1 Focus
+        </p>
+
+        <p class="font-semibold text-lg">
+          AI Literacy → AI Consulted
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Buttons -->
+    <div class="grid md:grid-cols-3 gap-4 mt-8">
+
+      <button onclick="openModal('cs100')"
+        class="bg-white/10 hover:bg-white/20 transition-all duration-300 rounded-2xl p-5 text-left border border-white/20 hover:scale-[1.02]">
+
+        <div class="text-xl font-bold mb-1">
+          CS100
+        </div>
+
+        <div class="text-sm text-slate-200">
+          AI Literacy Foundation
+        </div>
+
+      </button>
+
+      <button onclick="openModal('cs102')"
+        class="bg-white/10 hover:bg-white/20 transition-all duration-300 rounded-2xl p-5 text-left border border-white/20 hover:scale-[1.02]">
+
+        <div class="text-xl font-bold mb-1">
+          CS102
+        </div>
+
+        <div class="text-sm text-slate-200">
+          AI-assisted Programming
+        </div>
+
+      </button>
+
+      <button onclick="openModal('cs104')"
+        class="bg-white/10 hover:bg-white/20 transition-all duration-300 rounded-2xl p-5 text-left border border-white/20 hover:scale-[1.02]">
+
+        <div class="text-xl font-bold mb-1">
+          CS104
+        </div>
+
+        <div class="text-sm text-slate-200">
+          AI-assisted Data & Logic
+        </div>
+
+      </button>
+
+    </div>
+
+  </div>
+
+  <!-- Table -->
+  <div class="bg-white rounded-3xl shadow-2xl overflow-hidden border border-slate-200">
+
+    <!-- Header -->
+    <div class="grid grid-cols-4 bg-slate-100 p-5 font-semibold text-slate-700 text-lg">
+      <div>Course</div>
+      <div>Semester</div>
+      <div>AI Zone</div>
+      <div>AI Tools</div>
+    </div>
+
+    <!-- CS100 -->
+    <div class="grid grid-cols-4 p-5 border-t items-center hover:bg-slate-50 transition border-l-4 border-blue-500">
+
+      <div>
+        <div class="flex items-center gap-2 mb-1">
+
+          <p class="font-bold text-slate-800 text-lg">
+            CS100
+          </p>
+
+          <span class="bg-blue-500 text-white text-xs px-2 py-1 rounded-full">
+            AI Driver
+          </span>
+
+        </div>
+
+        <p class="text-sm text-slate-500">
+          Introduction to Computational Thinking
+        </p>
+      </div>
+
+      <div>
+        <span class="bg-blue-100 text-blue-700 px-4 py-2 rounded-full text-sm font-medium">
+          Semester 1
+        </span>
+      </div>
+
+      <div>
+        <span class="bg-blue-100 text-blue-600 px-4 py-2 rounded-full text-sm">
+          AI Free → Consulted
+        </span>
+      </div>
+
+      <div class="flex flex-wrap gap-2">
+        <span class="bg-slate-200 px-3 py-2 rounded-xl text-sm">ChatGPT</span>
+        <span class="bg-slate-200 px-3 py-2 rounded-xl text-sm">Miro</span>
+      </div>
+
+    </div>
+
+    <!-- CS102 -->
+    <div class="grid grid-cols-4 p-5 border-t items-center hover:bg-slate-50 transition border-l-4 border-indigo-500">
+
+      <div>
+        <div class="flex items-center gap-2 mb-1">
+
+          <p class="font-bold text-slate-800 text-lg">
+            CS102
+          </p>
+
+          <span class="bg-indigo-500 text-white text-xs px-2 py-1 rounded-full">
+            AI Driver
+          </span>
+
+        </div>
+
+        <p class="text-sm text-slate-500">
+          Fundamental of Computer Programming
+        </p>
+      </div>
+
+      <div>
+        <span class="bg-blue-100 text-blue-700 px-4 py-2 rounded-full text-sm font-medium">
+          Semester 1
+        </span>
+      </div>
+
+      <div>
+        <span class="bg-blue-100 text-blue-600 px-4 py-2 rounded-full text-sm">
+          AI Free → Consulted
+        </span>
+      </div>
+
+      <div class="flex flex-wrap gap-2">
+        <span class="bg-slate-200 px-3 py-2 rounded-xl text-sm">ChatGPT</span>
+        <span class="bg-slate-200 px-3 py-2 rounded-xl text-sm">GitHub Copilot</span>
+        <span class="bg-slate-200 px-3 py-2 rounded-xl text-sm">Colab</span>
+      </div>
+
+    </div>
+
+    <!-- IT132 -->
+    <div class="grid grid-cols-4 p-5 border-t items-center hover:bg-slate-50 transition">
+
+      <div>
+        <p class="font-bold text-slate-800 text-lg mb-1">
+          IT132
+        </p>
+
+        <p class="text-sm text-slate-500">
+          Idea Generation for Innovation
+        </p>
+      </div>
+
+      <div>
+        <span class="bg-blue-100 text-blue-700 px-4 py-2 rounded-full text-sm font-medium">
+          Semester 1
+        </span>
+      </div>
+
+      <div>
+        <span class="bg-yellow-100 text-yellow-700 px-4 py-2 rounded-full text-sm">
+          AI Assisted
+        </span>
+      </div>
+
+      <div class="flex flex-wrap gap-2">
+        <span class="bg-slate-200 px-3 py-2 rounded-xl text-sm">ChatGPT</span>
+        <span class="bg-slate-200 px-3 py-2 rounded-xl text-sm">Figma AI</span>
+      </div>
+
+    </div>
+
+    <!-- CS103 -->
+    <div class="grid grid-cols-4 p-5 border-t items-center hover:bg-slate-50 transition">
+
+      <div>
+        <p class="font-bold text-slate-800 text-lg mb-1">
+          CS103
+        </p>
+
+        <p class="text-sm text-slate-500">
+          Introduction to Business Process Management
+        </p>
+      </div>
+
+      <div>
+        <span class="bg-purple-100 text-purple-700 px-4 py-2 rounded-full text-sm font-medium">
+          Semester 2
+        </span>
+      </div>
+
+      <div>
+        <span class="bg-blue-100 text-blue-600 px-4 py-2 rounded-full text-sm">
+          AI Consulted
+        </span>
+      </div>
+
+      <div class="flex flex-wrap gap-2">
+        <span class="bg-slate-200 px-3 py-2 rounded-xl text-sm">ChatGPT</span>
+      </div>
+
+    </div>
+
+    <!-- CS104 -->
+    <div class="grid grid-cols-4 p-5 border-t items-center hover:bg-slate-50 transition border-l-4 border-purple-500">
+
+      <div>
+        <div class="flex items-center gap-2 mb-1">
+
+          <p class="font-bold text-slate-800 text-lg">
+            CS104
+          </p>
+
+          <span class="bg-purple-500 text-white text-xs px-2 py-1 rounded-full">
+            AI Driver
+          </span>
+
+        </div>
+
+        <p class="text-sm text-slate-500">
+          Introduction to Database
+        </p>
+      </div>
+
+      <div>
+        <span class="bg-purple-100 text-purple-700 px-4 py-2 rounded-full text-sm font-medium">
+          Semester 2
+        </span>
+      </div>
+
+      <div>
+        <span class="bg-yellow-100 text-yellow-700 px-4 py-2 rounded-full text-sm">
+          AI Assisted
+        </span>
+      </div>
+
+      <div class="flex flex-wrap gap-2">
+        <span class="bg-slate-200 px-3 py-2 rounded-xl text-sm">ChatGPT</span>
+        <span class="bg-slate-200 px-3 py-2 rounded-xl text-sm">DBDiagram</span>
+      </div>
+
+    </div>
+
+    <!-- CS422 -->
+    <div class="grid grid-cols-4 p-5 border-t items-center hover:bg-slate-50 transition">
+
+      <div>
+        <p class="font-bold text-slate-800 text-lg mb-1">
+          CS422
+        </p>
+
+        <p class="text-sm text-slate-500">
+          Operating Systems
+        </p>
+      </div>
+
+      <div>
+        <span class="bg-purple-100 text-purple-700 px-4 py-2 rounded-full text-sm font-medium">
+          Semester 2
+        </span>
+      </div>
+
+      <div>
+        <span class="bg-blue-100 text-blue-600 px-4 py-2 rounded-full text-sm">
+          AI Consulted
+        </span>
+      </div>
+
+      <div class="flex flex-wrap gap-2">
+        <span class="bg-slate-200 px-3 py-2 rounded-xl text-sm">Colab</span>
+        <span class="bg-slate-200 px-3 py-2 rounded-xl text-sm">ChatGPT</span>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- MODAL -->
+  <div id="modal"
+       class="fixed inset-0 bg-black/60 hidden items-center justify-center p-4 z-50 backdrop-blur-sm overflow-y-auto">
+
+    <div class="bg-white rounded-3xl max-w-7xl w-full p-8 relative shadow-2xl">
+
+      <button onclick="closeModal()"
+        class="absolute top-5 right-5 text-slate-500 hover:text-black text-3xl">
+        ✕
+      </button>
+
+      <div id="modalContent"></div>
+
+    </div>
+
+  </div>
+
+  <!-- Back -->
+  <div class="mt-10 text-center">
+
+    <a href="index.html"
+      class="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-4 px-8 rounded-2xl transition-all duration-300 shadow-lg hover:shadow-xl">
+
+      ← Back to Home
+
+    </a>
+
+  </div>
+
+  <!-- SCRIPT -->
+  <script>
+
+    const content = {
+
+      cs100: `
+
+      <div class="space-y-8">
+
+        <!-- TOP -->
+        <div class="grid lg:grid-cols-2 gap-8 items-start">
+
+          <!-- LEFT -->
+          <div>
+
+            <div class="flex items-center gap-3 mb-4">
+
+              <span class="bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-semibold shadow">
+                ⭐ AI DRIVER COURSE
+              </span>
+
+            </div>
+
+            <h2 class="text-6xl font-bold text-blue-600 mb-3">
+              CS100
+            </h2>
+
+            <h3 class="text-4xl font-bold text-slate-800 mb-4 leading-tight">
+              Introduction to Computational Thinking
+            </h3>
+
+            <p class="text-blue-600 text-xl font-medium mb-6">
+              AI Literacy Foundation
+            </p>
+
+            <p class="text-slate-600 leading-relaxed text-lg">
+              รายวิชานี้มุ่งเน้นการปลูกฝังพื้นฐานของการคิดเชิงคำนวณ 
+              การแก้ปัญหาอย่างเป็นระบบ และการใช้ AI อย่างมีวิจารณญาณ 
+              เพื่อเตรียมความพร้อมนักศึกษาในการเรียนรู้ในระดับที่สูงขึ้น
+            </p>
+
+          </div>
+
+          <!-- IMAGE -->
+          <div class="overflow-hidden rounded-3xl shadow-2xl border border-slate-200 bg-white">
+
+            <img
+              src="images/cs100.png"
+              alt="CS100 AI Literacy"
+              class="w-full h-auto object-cover hover:scale-[1.01] transition duration-300"
+            >
+
+          </div>
+
+        </div>
+
+      </div>
+
+      `,
+
+      cs102: `
+
+<div class="space-y-8">
+
+  <!-- TOP -->
+  <div class="grid lg:grid-cols-2 gap-8 items-start">
+
+    <!-- LEFT -->
+    <div>
+
+      <div class="flex items-center gap-3 mb-4">
+
+        <span class="bg-indigo-600 text-white px-4 py-2 rounded-full text-sm font-semibold shadow">
+          ⭐ AI DRIVER COURSE
+        </span>
+
+      </div>
+
+      <h2 class="text-6xl font-bold text-indigo-600 mb-3">
+        CS102
+      </h2>
+
+      <h3 class="text-4xl font-bold text-slate-800 mb-4 leading-tight">
+        Fundamental of Computer Programming
+      </h3>
+
+      <p class="text-indigo-600 text-xl font-medium mb-6">
+        AI-assisted Programming
+      </p>
+
+      <p class="text-slate-600 leading-relaxed text-lg">
+        รายวิชานี้มุ่งเน้นการเรียนรู้พื้นฐานการเขียนโปรแกรม 
+        การคิดเชิงตรรกะ และการแก้ปัญหาอย่างเป็นระบบ 
+        โดยให้นักศึกษาฝึกเขียนและ Debug ด้วยตนเองก่อน 
+        แล้วจึงใช้ AI เป็นผู้ช่วยในการเรียนรู้ วิเคราะห์ Error 
+        และช่วยพัฒนาแนวคิดด้านการเขียนโปรแกรม
+      </p>
+
+    </div>
+
+    <!-- IMAGE -->
+    <div class="overflow-hidden rounded-3xl shadow-2xl border border-slate-200 bg-white">
+
+      <img
+        src="images/cs102.png"
+        alt="CS102 AI-assisted Programming"
+        class="w-full h-auto object-cover hover:scale-[1.01] transition duration-300"
+      >
+
+    </div>
+
+  </div>
+
+  
+
+
+
+`,
+
+     
+    }
+
+    function openModal(id) {
+      document.getElementById('modal').classList.remove('hidden')
+      document.getElementById('modal').classList.add('flex')
+      document.getElementById('modalContent').innerHTML = content[id]
+    }
+
+    function closeModal() {
+      document.getElementById('modal').classList.add('hidden')
+      document.getElementById('modal').classList.remove('flex')
+    }
+
+  </script>
+
+</body>
+</html>
+```
